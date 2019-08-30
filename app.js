@@ -6,18 +6,14 @@ const bodyParser = require('body-parser')
 const generateTalk = require('./talk_generator')
 const port = process.env.PORT || 3000
 
-// add express-handlebars helper
 const hbs = exphbs.create({
   extname: '.hbs',
   defaultLayout: 'main'
 })
 
-// setup static files
-app.use(express.static('public'))
-
 // setup handlebars engine and use .hbs as file extension
 
-app.engine(hbs.extname, hbs.engine, hbs.extname, hbs.defaultLayout)
+app.engine(hbs.extname, hbs.engine, hbs.defaultLayout)
 // app.engine('.hbs', hbs.engine)
 app.set('view engine', hbs.extname)
 
