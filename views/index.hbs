@@ -1,0 +1,44 @@
+<form method="POST" action="/">
+  <div class=" mx-5 d-flex justify-content-around row">
+
+    <div class="form-group">
+      <label for="engineer">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+          alt="engineer-image" width="300" height="auto" class="img-responsive">
+      </label>
+      <label class="radio-inline d-flex justify-content-center mt-2">
+        <input type="radio" name="target" value="engineer" id="engineer" class="targets">Engineer
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="designer">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+          alt="designer-image" width="300" height="auto" class="img-responsive">
+      </label>
+      <label class="radio-inline d-flex justify-content-center mt-2">
+        <input type="radio" name="target" value="designer" id="designer" class="targets">Designer
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="entrepreneur">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+          alt="entrepreneur-image" width="300" height="auto" class="img-responsive">
+      </label>
+      <label class="radio-inline d-flex justify-content-center mt-2">
+        <input type="radio" name="target" value="entrepreneur" id="entrepreneur" class="targets">Entrepreneur
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group m-3 d-flex justify-content-center">
+    <div class="d-flex align-items-center mx-2">
+      <button type="submit" class="btn btn-primary">Generate</button>
+    </div>
+    <div class="col-9">
+      <textarea class="form-control" rows="5" id="generate-text"
+        placeholder="Rubbish talk will generate here">{{sentence}}</textarea>
+    </div>
+  </div>
+</form>
