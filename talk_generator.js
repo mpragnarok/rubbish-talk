@@ -16,6 +16,9 @@ function generateTalk(target) {
   }
   const phrase = ['很簡單', '很容易', '很快', '很正常']
 
+  // return error if you don't choose target
+  if (target === undefined) return 'You must select one of target.'
+
   const randomTask = randomElement(task[target])
   const randomPhrase = randomElement(phrase)
 
